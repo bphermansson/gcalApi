@@ -6,10 +6,7 @@ using Google.Apis.Util.Store;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Globalization;
 using System.Text.Json;
 
@@ -24,9 +21,7 @@ namespace GcalData
         static List<OneItem> AllEvents = new List<OneItem>();
         static string jsonString;
 
-        //public static List<OneItem> gcalfetch()
         public static string gcalfetch()
-
         {
             UserCredential credential;
             using (var stream =
