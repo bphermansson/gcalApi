@@ -1,0 +1,2 @@
+https://docs.microsoft.com/en-us/dotnet/core/deploying/#self-contained-deployments-scd
+dotnet publish -r linux-arm

@@ -14,11 +14,13 @@ namespace gcalApi.Controllers
         public IActionResult gcaldata()
         {
             string v = fetchGcal.gcalfetch();
+            /*
             var gdata = v;
             Console.WriteLine("gdata: " + gdata);
             List<string> googleItems = new List<string>{};
             googleItems.Add(gdata.ToString());
-            return Ok(gdata);
+            */
+            return Ok(v);
         }
         [HttpGet("listcalendars")]
         public string listcalendars()
