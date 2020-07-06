@@ -1,2 +1,16 @@
-https://docs.microsoft.com/en-us/dotnet/core/deploying/#self-contained-deployments-scd
+This project uses C# and dotnet to get data from a users Google Calendars.
+It uses Googles libs as described in https://developers.google.com/calendar/quickstart/dotnet 
+and shows the data as Json with an api. 
+
+Test run: Press F5 in VS Code.
+
+Publish p Raspberry Pi 2:
 dotnet publish -r linux-arm
+Then copy the publish folder to the server/Pi.
+Connect to http://<PI IP>:8080/api/GcalItems/getevents. 
+
+Ref:
+https://docs.microsoft.com/en-us/dotnet/core/deploying/#self-contained-deployments-scd
+https://kimsereyblog.blogspot.com/2018/05/manage-kestrel-process-with-systemd.html
+https://dotnet.microsoft.com/download/dotnet-core/3.1
+https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
