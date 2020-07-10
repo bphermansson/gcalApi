@@ -124,7 +124,6 @@
 /home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
-/home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/credentials.json
 /home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/Google.Apis.dll
 /home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/Google.Apis.Auth.PlatformServices.dll
 /home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/Google.Apis.Auth.dll
