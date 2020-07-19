@@ -1,0 +1,11 @@
+[Unit]
+Description=gcalApi
+
+[Service]
+WorkingDirectory=/home/pi/gcalApi
+ExecStart=/home/pi/dotnet-arm32/dotnet /home/pi/gcalApi/gcalApi.dll --urls http://*:8080
+SyslogIdentifier=gcalApi
+User=pi
+
+[Install]
+WantedBy=multi-user.target
