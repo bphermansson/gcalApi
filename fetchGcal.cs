@@ -24,6 +24,7 @@ namespace GcalData
         public static string gcalfetch()
         {
             UserCredential credential;
+            AllEvents.Clear();
             using (var stream =
                 new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
             {

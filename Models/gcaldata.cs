@@ -5,5 +5,4 @@ public class OneItem {
     public DateTime Starttime {get; set;}
     public DateTime Endtime {get; set;}
     public string Creator {get; set;}
-
 }
