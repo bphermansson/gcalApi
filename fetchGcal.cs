@@ -110,6 +110,9 @@ namespace GcalData
                     oneitem.Starttime = dtWhen;
                     oneitem.Endtime = DateTime.Parse(et);
                     oneitem.Creator = eventItem.Creator.DisplayName;
+                    oneitem.Creatoremail = eventItem.Creator.Email;
+                    oneitem.OrganizerId = eventItem.Organizer.Id;
+                    oneitem.OrganizerDisplayName = eventItem.Organizer.DisplayName;
                     AllEvents.Add(oneitem);
                 }
             }

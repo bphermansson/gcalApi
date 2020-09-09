@@ -4,6 +4,8 @@ and shows the data as Json with an api.
 
 Test run: Press F5 in VS Code.
 
+Open https://localhost:5001/api/GcalItems/getevents in browser.
+
 Publish p Raspberry Pi 2:
 dotnet publish -r linux-arm
 Then copy the publish folder to the server/Pi. (/home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/linux-arm/publish/)
