@@ -6,10 +6,12 @@ Test run: Press F5 in VS Code.
 
 Open https://localhost:5001/api/GcalItems/getevents in browser.
 
-Publish p Raspberry Pi 2:
+Publish for Raspberry Pi 2:
 dotnet publish -r linux-arm
-Then copy the publish folder to the server/Pi. (/home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/linux-arm/publish/)
-Connect to http://<PI IP>:8080/api/GcalItems/getevents. 
+Then copy the publish folder to the server/Pi. (/home/patrik/Programmering/csharp/gcalApi/bin/Debug/netcoreapp3.1/linux-arm/publish/).
+In the systemd folder there is a service scirpt that can be used to start/stop the service automatically. Adjust the folders in the script if needed. 
+
+When the service is started, try to connect to http://<PI IP>:8080/api/GcalItems/getevents. 
 
 Ref:
 https://docs.microsoft.com/en-us/dotnet/core/deploying/#self-contained-deployments-scd
