@@ -12,10 +12,24 @@ Then copy the publish folder to the server/Pi. (/home/patrik/Programmering/cshar
 In the systemd folder there is a service scirpt that can be used to start/stop the service automatically. Adjust the folders in the script if needed. 
 
 When the service is started, try to connect to http://<PI IP>:8080/api/GcalItems/getevents. The first time the code is run it needs to authenticate with Google, 
-a process that needs a web browser. 
+a process that needs a web browser.
+
+Sometimes you need to login to the api again. 
+To do this, connect to the Pi with -X ("ssh -X pi@192.168.n.n). Install Chromium and 
+run the app ("/home/pi/dotnet-arm32/dotnet /home/pi/gcalApi/gcalApi.dll --urls http://*:8081")
+Wait until Chromium loads and login with your Google account. 
 
 Ref:
 https://docs.microsoft.com/en-us/dotnet/core/deploying/#self-contained-deployments-scd
 https://kimsereyblog.blogspot.com/2018/05/manage-kestrel-process-with-systemd.html
 https://dotnet.microsoft.com/download/dotnet-core/3.1
 https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu
+
+
+
+Follow the instructions on
+https://developers.google.com/workspace/guides/create-credentials
+
+
+(webclient1 is the default name)
+

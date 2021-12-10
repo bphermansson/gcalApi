@@ -29,7 +29,7 @@ namespace gcalApi
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                     builder =>
                     {
-                    builder.WithOrigins("http://192.168.1.10", "http://192.168.1.119");
+                    builder.WithOrigins("http://192.168.1.10", "http://192.168.1.190");
                     });
             });
             services.AddControllers();

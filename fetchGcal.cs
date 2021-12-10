@@ -23,6 +23,8 @@ namespace GcalData
 
         public static string gcalfetch()
         {
+            Console.WriteLine("gcalfetch()");
+
             UserCredential credential;
             AllEvents.Clear();
             using (var stream =
